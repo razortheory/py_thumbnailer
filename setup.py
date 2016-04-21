@@ -30,14 +30,14 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
+        'Environment :: Console',
+        'Environment :: Plugins',
         'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
+        'Operating System :: Unix',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
 )
 
