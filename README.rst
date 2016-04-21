@@ -25,14 +25,14 @@ Installation
 ------------
     ::
 
-        $ pip install documents-thumbnailer
+        $ pip install py-thumbnailer
         
 Usage
 -----
 From command line:
     ::
 
-        $ documents-thumbnailer SOURCEFILE [OUTPUTFILE]
+        $ py-thumbnailer SOURCEFILE [OUTPUTFILE]
 
 From python code:
     ::
