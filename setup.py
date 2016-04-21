@@ -17,7 +17,7 @@ setup(
     author='Roman Karpovich',
     author_email='fpm.th13f@gmail.com',
     url='https://github.com/razortheory/py_thumbnailer',
-    license='MIT',
+    license='BSD',
     packages=['py_thumbnailer', ],
     entry_points={
         'console_scripts': [
