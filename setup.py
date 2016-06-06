@@ -10,7 +10,7 @@ def read(*rnames):
 
 setup(
     name='py_thumbnailer',
-    version='0.2.1',
+    version='0.2.2',
     description='Documents Thumbnailer library',
     long_description=read('README.rst'),
 

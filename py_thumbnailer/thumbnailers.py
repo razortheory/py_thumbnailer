@@ -35,6 +35,7 @@ class InputFileThumbnailer(object):
     def thumbnail(cls, source_file, resize_to=None):
         temp_file = None
         if hasattr(source_file, 'read'):
+            source_file.seek(0)
             temp_file = tempfile.NamedTemporaryFile(delete=False)
             temp_file.write(source_file.read())
             temp_file.close()
