@@ -39,3 +39,15 @@ From python code:
 
         from py_thumbnailer.thumbnail import create_thumbnail
         output_buffer = create_thumbnail(source_file)
+
+
+Unoconv doesn't support multiprocessing, so you have to use mutex
+    ::
+
+        import fcntl
+
+        try:
+            fcntl.flock(converter_lock, fcntl.LOCK_EX)
+            preview_buffer = create_thumbnail(document.document_file, resize_to=400)
+        finally:
+            fcntl.flock(converter_lock, fcntl.LOCK_UN)
